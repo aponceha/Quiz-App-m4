@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/4a25a17f73.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Code Quiz App</title>
+</head>
+<body>
+    <div id="container">
+<!-- Start -->
+        <div id="start">Start</div>
+<!-- Intro -->
+        <div id="guide">
+            <h2> Quiz guide</h2>
+            <h4>1. You only have 30 seconds for all questions.</h4>
+            <h4>2. You will get 20 points for correct answers</h4>
+            <h4>3. You will lose time for incorrect answers.</h4>
+            <h4>Good Luck!</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+            
+        </div> 
+
+<!-- Quiz -->
+        <div id="quiz">
+            <div id="quiz-header">
+                <h5> Coding Quiz App</h5>
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">30</h6>
+                </div>
+            </div>
+        
+<!-- Quiz Questions -->
+            <div id="question">
+                <h2 id="question-num"></h2>
+                <h2 id="question-text"></h2>
+            </div>
+<!-- Quiz Choices -->
+            <div id="option-list">
+                <h4 class="choice-q" id="option1" data-number="1"></h4>
+                <h4 class="choice-q" id="option2" data-number="2"></h4>
+                <h4 class="choice-q" id="option3" data-number="3"></h4>
+                <h4 class="choice-q" id="option4" data-number="4"></h4>
+            </div>
+        
+<!-- Answer Section -->
+            <div id="answer-section">
+                <h3 id="a-question-pre">Question:</h3>
+                <h3 id="a-question-d">1/5</h3>
+                <h3 id="a-score-pre">Score:</h3>
+                <h3 id="a-score-d"></h3>
+                <h3 id="next-question">Next</h3>
+            </div>
+        </div>
+<!-- Result Section -->
+            <div id="result">
+                <i class="fa-solid fa-square-check"></i>
+                <h6>Your Score:</h6>
+                <h6 id="points"></h6>
+                <div id="submitform">
+                    <h6>Save your Score & Enter your initials:</h6>
+                    <input type="text" id="username" name="initials">
+                    <button id = "submitbut">Save Score</button>
+                </div>
+                <button id="start-again">Start Again</button>
+            </div>
+<!-- High Score Section -->
+            <div id="high-score">
+                <br>
+                <h2>High Scores</h2>
+                <br>
+                <div id="high-score-list">
+                    <ul id="high-score-name">1. AB ........ 50</ul>
+                    <br>
+                </div>
+                <button id="clear">Clear</button>
+                <button id="returnstart">Return</button>
+            </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
